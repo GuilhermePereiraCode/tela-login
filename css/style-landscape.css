@@ -1,0 +1,30 @@
+@media  screen and (min-width: 992px){
+    body{
+        background-image: radial-gradient(circle at center, #f5ffc696, var(--cor05));
+        width: 100vw;
+        height: 100vh;
+    }
+
+    main{
+        height: 300px;
+        width: 970px;
+        padding: 0px;
+        transition: width .2s, height .2s;
+        transition-timing-function: ease;
+    }
+
+    div#img{
+        margin: 0px;
+        width: 46%;
+        height: 100%;
+        display: block;
+        float: right;
+    }
+    
+    div#content{
+        width: 50%;
+        float: left;
+        margin: 10px; 
+    }
+    
+}

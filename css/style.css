@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Roboto&display=swap');
+
+:root{
+    --cor01: #F5FFC6;
+    --cor02: #B4E1FF;
+    --cor03: #8A817C;
+    --cor04: #E0AFA0;
+    --cor05: #3D0814;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', 'Lato', 'Roboto', 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    font-size: .97em;
+}
+
+/*------------------------------ TAGS ------------------------------*/
+
+body{
+    background-color: var(--cor03);
+}
+
+main{
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    width: 250px;
+    overflow: hidden;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.336);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.4em;
+    font-weight: bolder;
+}
+
+p{
+    margin: 10px 0px;
+    text-align: center;
+}
+
+div{
+    margin: 7px 0px;
+    background-color: var(--cor05);
+    color: white;
+    padding: 2px 5px;
+    border-radius: 5px;
+    height: 36px;
+}
+div.botao{
+    padding: 0px;
+    background-color: white;
+}
+
+input{
+    height: 30px;
+    background-color: var(--cor04);
+    padding: 5px;
+    border-radius: 10px;
+}
+input.preencher{
+    width: calc(100% - 28px);
+    vertical-align: top;
+    outline: none;
+}
+input.preencher:focus-within{
+    background-color: #dbc2bb;
+}
+
+div label{
+    display: none;
+}
+
+span{
+    margin-top: 4px;
+}
+/*-------------------------- IDS --------------------------*/
+div#img{
+    margin: -10px;
+    background-image: url(../imagens/neural1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 230px;
+}
+
+div#content{
+    display: block;
+    height: auto;
+    background-color: white;
+    color: black;
+    padding: 0px;
+}
+
+input#botao-entrar{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px 0px;
+    background-color: var(--cor02);
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+input#botao-entrar:hover, a#botao-esqueceu-senha:hover{
+    box-shadow: inset 0px 0px 7px #3d0814b4;
+}
+
+a#botao-esqueceu-senha{
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: 0px 10px;
+    background-color: #b4e1ff88;
+    border: 2px solid black;
+    text-align: center;
+    padding-top: 5px;
+    text-decoration: none;
+    color: black;
+}
+a > span.material-symbols-outlined{
+    font-size: 1em;
+}
+
